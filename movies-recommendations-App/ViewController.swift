@@ -16,6 +16,7 @@ class ViewController: UIViewController , UITableViewDataSource {
         // Do any additional setup after loading the view.
     }
     
+    // a chaque fois la vue apparait dans l'ecran on recharge les donnees a nouveau pour etre toujours a jour
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
