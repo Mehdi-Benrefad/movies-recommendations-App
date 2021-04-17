@@ -8,13 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Movie.list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell=tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        let movie = Movie.list[indexPath.row]
+        
+        cell.textLabel?.text = movie.title
+        cell.detailTextLabel?.text = String(movie.year)
+        
+        return cell
+    }
 }
 

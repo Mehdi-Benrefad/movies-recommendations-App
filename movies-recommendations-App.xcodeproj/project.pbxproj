@@ -15,6 +15,7 @@
 		4F06549C262A62BE006CEBC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F06549A262A62BE006CEBC5 /* LaunchScreen.storyboard */; };
 		4F0654A7262A62BF006CEBC5 /* movies_recommendations_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0654A6262A62BF006CEBC5 /* movies_recommendations_AppTests.swift */; };
 		4F0654B2262A62BF006CEBC5 /* movies_recommendations_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0654B1262A62BF006CEBC5 /* movies_recommendations_AppUITests.swift */; };
+		4F0654C0262A648A006CEBC5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0654BF262A648A006CEBC5 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4F0654AD262A62BF006CEBC5 /* movies-recommendations-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movies-recommendations-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0654B1262A62BF006CEBC5 /* movies_recommendations_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movies_recommendations_AppUITests.swift; sourceTree = "<group>"; };
 		4F0654B3262A62BF006CEBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0654BF262A648A006CEBC5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				4F06548F262A62B5006CEBC5 /* AppDelegate.swift */,
 				4F065491262A62B6006CEBC5 /* SceneDelegate.swift */,
+				4F0654BF262A648A006CEBC5 /* Movie.swift */,
 				4F065493262A62B6006CEBC5 /* ViewController.swift */,
 				4F065495262A62B6006CEBC5 /* Main.storyboard */,
 				4F065498262A62BE006CEBC5 /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			files = (
 				4F065494262A62B6006CEBC5 /* ViewController.swift in Sources */,
 				4F065490262A62B5006CEBC5 /* AppDelegate.swift in Sources */,
+				4F0654C0262A648A006CEBC5 /* Movie.swift in Sources */,
 				4F065492262A62B6006CEBC5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
