@@ -67,6 +67,8 @@ struct Movie {
     
     
     
+    
+    //fonction qui supprime un element de la liste
     static func removeMovie(_ index:Int){
         list.remove(at: index)
         
