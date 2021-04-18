@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-3z-zYd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-3z-zYd">
+                                <rect key="frame" x="0.0" y="124" width="414" height="612"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" textLabel="IDQ-A1-0hE" detailTextLabel="uyQ-h9-AGT" rowHeight="100" style="IBUITableViewCellStyleSubtitle" id="Scz-4I-VKf" customClass="CustomTableViewCell" customModule="movies_recommendations_App" customModuleProvider="target">
@@ -82,13 +82,26 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="rWn-Kh-us7"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jK-df-lbK">
+                                <rect key="frame" x="108" y="32" width="198" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1jK-df-lbK" secondAttribute="height" multiplier="198:101" constant="33.326732673267315" id="QHe-sW-aR5"/>
+                                    <constraint firstAttribute="width" constant="198" id="Xno-Mt-J79"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="1jK-df-lbK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1uI-Pc-qgP"/>
                             <constraint firstItem="81Z-3z-zYd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6qM-N8-AfX"/>
+                            <constraint firstItem="1jK-df-lbK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="CH3-VM-cBY"/>
                             <constraint firstItem="81Z-3z-zYd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M5R-R2-q3F"/>
-                            <constraint firstItem="81Z-3z-zYd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jC8-D6-i86"/>
+                            <constraint firstItem="81Z-3z-zYd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="jC8-D6-i86"/>
                             <constraint firstAttribute="bottom" secondItem="81Z-3z-zYd" secondAttribute="bottom" id="niU-AB-byZ"/>
+                            <constraint firstItem="81Z-3z-zYd" firstAttribute="top" secondItem="1jK-df-lbK" secondAttribute="bottom" constant="25" id="vO1-Ax-pwa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
