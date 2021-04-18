@@ -12,7 +12,7 @@ struct Movie {
     var title = ""
     var year = 0
 
-    static let list = [
+    static var list = [
         Movie(title: "The Shawshank Redemption", year: 1994),
         Movie(title: "The Godfather", year: 1972),
         Movie(title: "The Dark Knight", year: 2008),
@@ -64,6 +64,14 @@ struct Movie {
         Movie(title: "The Pianist", year: 2002),
         Movie(title: "Casablanca", year: 1942)
     ]
+    
+    
+    
+    static func removeMovie(_ index:Int){
+        list.remove(at: index)
+        
+    }
+    
 }
 
 
