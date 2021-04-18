@@ -34,11 +34,16 @@ class ViewController: UIViewController , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell=tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as? CustomTableViewCell else {
+            return UITableViewCell()
+        }
+        //let cell=tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         let movie = Movie.list[indexPath.row]
         
-        cell.textLabel?.text = movie.title
-        cell.detailTextLabel?.text = String(movie.year)
+        //cell.textLabel?.text = movie.title
+        //cell.detailTextLabel?.text = String(movie.year)
+        
+        cell.configure(number : indexPath.row, title: movie.title, year: movie.year)
         
         return cell
     }
